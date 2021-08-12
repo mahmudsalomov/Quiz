@@ -15,6 +15,8 @@
     <description>Demo project for Flutter</description>
     <properties>
         <java.version>11</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <spring-boot-admin.version>2.4.3</spring-boot-admin.version>
     </properties>
 
