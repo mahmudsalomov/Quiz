@@ -20,25 +20,25 @@
         <spring-boot-admin.version>2.4.3</spring-boot-admin.version>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>mahmudsalomov-Payload</id>
-            <url>https://packagecloud.io/mahmudsalomov/Payload/maven2</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>mahmudsalomov-Payload</id>-->
+<!--            <url>https://packagecloud.io/mahmudsalomov/Payload/maven2</url>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
     <dependencies>
 
-        <dependency>
-            <groupId>payload</groupId>
-            <artifactId>payload</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>payload</groupId>-->
+<!--            <artifactId>payload</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.hashids/hashids -->
         <dependency>

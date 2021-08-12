@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import payload.ApiResponse;
-import payload.Payload;
 import uz.test.quiz.dto.receive.UserReceive;
 import uz.test.quiz.entity.User;
+import uz.test.quiz.payload.ApiResponse;
+import uz.test.quiz.payload.Payload;
 import uz.test.quiz.repository.UserRepository;
 
 @Service

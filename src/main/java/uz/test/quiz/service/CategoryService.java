@@ -2,9 +2,9 @@ package uz.test.quiz.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import payload.ApiResponse;
-import payload.Payload;
 import uz.test.quiz.entity.Category;
+import uz.test.quiz.payload.ApiResponse;
+import uz.test.quiz.payload.Payload;
 import uz.test.quiz.repository.CategoryRepository;
 
 import java.util.Optional;
