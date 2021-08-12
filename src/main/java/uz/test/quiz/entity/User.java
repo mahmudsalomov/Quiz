@@ -4,6 +4,7 @@ import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import uz.test.quiz.dto.receive.UserReceive;
+import uz.test.quiz.dto.send.UserSend;
 import uz.test.quiz.entity.template.AbsEntityInteger;
 
 import javax.persistence.Column;
@@ -60,6 +61,19 @@ public class User extends AbsEntityInteger implements UserDetails {
     @Override
     public boolean isEnabled() {
         return active;
+    }
+
+
+    public UserSend userToUserSend(){
+        return UserSend
+                .builder()
+                .email(email)
+                .phone(phone)
+                .id(this.getId())
+                .username(username)
+                .role(roles.stream().findFirst().get().getRoleName().name())
+                .fio(fio)
+                .build();
     }
 
 

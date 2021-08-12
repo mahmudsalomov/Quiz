@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @Builder
 @Entity
-public class BlockTranslate extends AbsEntityInteger {
+public class BlockTranslation extends AbsEntityInteger {
     private String name;
 
     @ManyToOne

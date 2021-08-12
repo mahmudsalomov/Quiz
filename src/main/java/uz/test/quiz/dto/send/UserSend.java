@@ -1,21 +1,20 @@
-package uz.test.quiz.dto.receive;
+package uz.test.quiz.dto.send;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotNull;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserReceive {
+public class UserSend {
     private Integer id;
     private String username;
-    private String password;
+//    private String password;
     private String email;
     private String phone;
     private String fio;
+    private String role;
 }

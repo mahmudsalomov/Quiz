@@ -59,7 +59,7 @@ public class DataLoader implements CommandLineRunner {
                             .password(passwordEncoder.encode("admin"))
                             .fio("admin")
                             .phone("+998993793877")
-                            .roles(Collections.singleton(SUPER_ADMIN))
+                            .roles(Collections.singleton(ADMIN))
                             .username("admin")
                             .build()
             );
@@ -72,7 +72,7 @@ public class DataLoader implements CommandLineRunner {
                             .password(passwordEncoder.encode("user"))
                             .fio("user")
                             .phone("+998993793877")
-                            .roles(Collections.singleton(SUPER_ADMIN))
+                            .roles(Collections.singleton(USER))
                             .username("user")
                             .build()
             );

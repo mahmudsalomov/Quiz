@@ -23,8 +23,8 @@ public class Converter {
 
     public ApiResponse checkAllForRegister(UserReceive userReceive){
         if (userReceive.getEmail()==null) Payload.badRequest("Email is null!");
-        if (userReceive.getUsername()==null) Payload.badRequest("Email is null!");
-//        if (userReceive.getPassword()==null) Payload.badRequest("Password is null!");
+        if (userReceive.getUsername()==null) Payload.badRequest("Username is null!");
+        if (userReceive.getPassword()==null) Payload.badRequest("Password is null!");
         if (checkActiveWithEmail(userReceive.getEmail())) return Payload.conflict("Bu email oldin ro'yhatdan o'tgan!");
         if (checkUsername(userReceive.getUsername())) return Payload.conflict("Bu username oldindan mavjud!");
         if (checkPassword(userReceive.getPassword())) return Payload.badRequest("Parol 6 ta belgidan ko'p bo'lishi kerak!");

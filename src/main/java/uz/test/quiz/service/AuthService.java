@@ -14,7 +14,6 @@ import payload.ApiResponse;
 import payload.ApiResponseObject;
 import payload.Payload;
 import uz.test.quiz.component.CodeGenerator;
-import uz.test.quiz.dto.UserDto;
 import uz.test.quiz.dto.receive.UserReceive;
 import uz.test.quiz.entity.User;
 import uz.test.quiz.entity.enums.RoleName;
