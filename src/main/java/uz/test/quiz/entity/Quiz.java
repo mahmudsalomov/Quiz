@@ -21,6 +21,8 @@ public class Quiz extends AbsEntityInteger {
     private List<Category> categoryList;
     @OneToMany
     private List<Answer> answerList;
+    @OneToMany
+    private List<QuizTranslation> quizTranslationList;
 
     @ManyToMany
     private List<Block> blockList;

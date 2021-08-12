@@ -3,6 +3,7 @@ package uz.test.quiz.entity;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import uz.test.quiz.dto.receive.UserReceive;
 import uz.test.quiz.entity.template.AbsEntityInteger;
 
 import javax.persistence.Column;
@@ -59,5 +60,22 @@ public class User extends AbsEntityInteger implements UserDetails {
     @Override
     public boolean isEnabled() {
         return active;
+    }
+
+
+    public static User userReceiveToUser(UserReceive receive){
+        try {
+            return User
+                    .builder()
+                    .email(receive.getEmail())
+                    .fio(receive.getFio())
+                    .username(receive.getUsername())
+                    .phone(receive.getPhone())
+                    .password(receive.getPassword())
+                    .build();
+        }catch(Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }
