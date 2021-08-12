@@ -4,10 +4,7 @@ import lombok.*;
 import uz.test.quiz.entity.enums.QuizType;
 import uz.test.quiz.entity.template.AbsEntityInteger;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
@@ -22,4 +19,9 @@ public class Quiz extends AbsEntityInteger {
     private QuizType type;
     @ManyToMany
     private List<Category> categoryList;
+    @OneToMany
+    private List<Answer> answerList;
+
+    @ManyToMany
+    private List<Block> blockList;
 }

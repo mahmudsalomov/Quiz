@@ -4,10 +4,7 @@ import lombok.*;
 import uz.test.quiz.entity.enums.QuizType;
 import uz.test.quiz.entity.template.AbsEntityInteger;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -15,8 +12,9 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @Builder
 @Entity
+//@Table(name = "aaaa")
 public class Answer extends AbsEntityInteger {
-    private boolean right;
+    private Boolean isRight;
     @ManyToOne
     private Quiz quiz;
 }

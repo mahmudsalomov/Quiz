@@ -20,7 +20,7 @@ public class Attempt extends AbsEntityInteger {
     @ManyToOne
     private User user;
 
-    private boolean start;
+    private Boolean start;
 
     private Date startDate;
     private Date endDate;

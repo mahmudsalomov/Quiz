@@ -5,6 +5,7 @@ import uz.test.quiz.entity.template.AbsEntityInteger;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
@@ -13,8 +14,10 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Entity
+//@Table(name = "bbbb")
 public class Block extends AbsEntityInteger {
-    private int limit;
+
+    private Integer timeLimit;
     @ManyToMany
     private List<Quiz> quizList;
 }
