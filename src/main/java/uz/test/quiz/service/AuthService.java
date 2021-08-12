@@ -70,8 +70,9 @@ public class AuthService implements UserDetailsService {
             );
             SecurityContextHolder.getContext().setAuthentication(authentication);
             User principal = (User) authentication.getPrincipal();
+
             String jwt = jwtTokenProvider.generateToken(principal);
-            return new ResToken(jwt);
+            return new ResToken(jwt,principal.getRoles().stream().findFirst().get().getRoleName().name());
         } catch (Exception e) {
 //            e.printStackTrace();
             return null;
