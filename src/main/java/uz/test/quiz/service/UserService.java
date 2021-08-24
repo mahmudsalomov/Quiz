@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import uz.test.quiz.component.CodeGenerator;
-import uz.test.quiz.dto.receive.UserReceive;
+import uz.test.quiz.dto.UserReceive;
 import uz.test.quiz.entity.User;
 import uz.test.quiz.entity.enums.RoleName;
 import uz.test.quiz.payload.ApiResponse;

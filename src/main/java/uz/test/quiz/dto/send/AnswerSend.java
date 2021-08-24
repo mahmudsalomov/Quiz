@@ -5,16 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Builder
-public class UserSend {
+public class AnswerSend {
     private Integer id;
-    private String username;
-//    private String password;
-    private String email;
-    private String phone;
-    private String fio;
-    private String role;
+    private String text;
 }

@@ -4,17 +4,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import uz.test.quiz.dto.receive.UserReceive;
-import uz.test.quiz.entity.User;
+import uz.test.quiz.dto.UserReceive;
+import uz.test.quiz.entity.*;
 import uz.test.quiz.payload.ApiResponse;
 import uz.test.quiz.payload.Payload;
-import uz.test.quiz.repository.UserRepository;
+import uz.test.quiz.repository.*;
 
 @Service
 public class Converter {
 
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private QuizRepository quizRepository;
+    @Autowired
+    private LanguageRepository languageRepository;
+    @Autowired
+    private AnswerRepository answerRepository;
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     public static HttpEntity<?> transform(ApiResponse apiResponse){
         return ResponseEntity.status(apiResponse.getStatus().getCode()).body(apiResponse);
@@ -63,4 +71,7 @@ public class Converter {
         }
 
     }
+
+
+
 }

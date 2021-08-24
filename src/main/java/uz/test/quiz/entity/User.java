@@ -3,8 +3,8 @@ package uz.test.quiz.entity;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import uz.test.quiz.dto.receive.UserReceive;
-import uz.test.quiz.dto.send.UserSend;
+import uz.test.quiz.dto.UserReceive;
+import uz.test.quiz.dto.UserSend;
 import uz.test.quiz.entity.template.AbsEntityInteger;
 
 import javax.persistence.Column;

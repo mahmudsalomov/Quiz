@@ -5,10 +5,7 @@ import uz.test.quiz.entity.enums.QuizType;
 import uz.test.quiz.entity.template.AbsEntityInteger;
 import uz.test.quiz.entity.template.AbsEntityShort;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
@@ -18,5 +15,6 @@ import javax.persistence.Id;
 public class Language {
     @Id
     private String code;
+    @Column(unique = true)
     private String name;
 }

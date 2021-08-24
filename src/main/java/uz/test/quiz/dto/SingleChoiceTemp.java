@@ -1,4 +1,5 @@
-package uz.test.quiz.dto.receive;
+package uz.test.quiz.dto;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,11 +12,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class QuizReceive {
-    private Integer id;
+public class SingleChoiceTemp {
     private String text;
-    private int rate;
-    private List<String> options;
-    private String right;
-    private String category;
+    private String A;
+    private String B;
+    private String C;
+    private String D;
+    private String rightAnswer;
+    private List<String> categories;
 }

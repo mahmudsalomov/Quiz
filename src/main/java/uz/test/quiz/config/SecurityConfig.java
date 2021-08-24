@@ -1,5 +1,6 @@
 package uz.test.quiz.config;
 
+import de.codecentric.boot.admin.server.config.AdminServerProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,6 +25,12 @@ import uz.test.quiz.service.AuthService;
         jsr250Enabled = true,
         prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    private final AdminServerProperties adminServer;
+
+    public SecurityConfig(AdminServerProperties adminServer) {
+        this.adminServer = adminServer;
+    }
 
     @Autowired
     AuthService authService;

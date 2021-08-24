@@ -1,4 +1,4 @@
-package uz.test.quiz.dto.receive;
+package uz.test.quiz.dto.send;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,11 +11,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class QuizReceive {
+public class QuizSend {
     private Integer id;
     private String text;
-    private int rate;
-    private List<String> options;
-    private String right;
+    private List<AnswerSend> options;
     private String category;
 }

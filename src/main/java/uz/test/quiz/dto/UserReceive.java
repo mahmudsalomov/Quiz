@@ -1,4 +1,4 @@
-package uz.test.quiz.dto.receive;
+package uz.test.quiz.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -6,14 +6,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import uz.test.quiz.dto.receive.UserReceive;
+import uz.test.quiz.dto.UserReceive;
 import uz.test.quiz.payload.Payload;
 import uz.test.quiz.secret.ResToken;
 import uz.test.quiz.secret.SignIn;
 import uz.test.quiz.service.AuthService;
 import uz.test.quiz.utils.Converter;
-
-import javax.servlet.http.HttpServletRequest;
 
 
 @RestController

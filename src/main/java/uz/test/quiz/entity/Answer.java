@@ -15,9 +15,8 @@ import java.util.List;
 @Entity
 //@Table(name = "aaaa")
 public class Answer extends AbsEntityInteger {
-    private Boolean isRight;
-    @ManyToOne
-    private Quiz quiz;
-    @OneToMany
-    private List<AnswerTranslation> answerTranslationList;
+    private boolean isRight;
+    @Column(columnDefinition = "text")
+    private String text;
+
 }

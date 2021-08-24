@@ -7,7 +7,7 @@ import uz.test.quiz.entity.Category;
 import java.util.List;
 
 
-public interface CategoryRepository extends JpaRepository<Category,Short> {
+public interface CategoryRepository extends JpaRepository<Category,String> {
 
     boolean existsByName(String name);
     List<Category> findAllByOrderByNameAsc();

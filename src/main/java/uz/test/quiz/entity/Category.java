@@ -3,17 +3,15 @@ package uz.test.quiz.entity;
 import lombok.*;
 import uz.test.quiz.entity.template.AbsEntityShort;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
-public class Category extends AbsEntityShort {
-    @Column(unique = true)
+public class Category {
+    @Id
     private String name;
     private String description;
 }
